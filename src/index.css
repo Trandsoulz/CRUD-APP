@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@layer base {
+  h1 {
+    @apply text-xl;
+  }
+  h2 {
+    @apply text-lg;
+  }
+  h3 {
+    @apply text-base;
+  }
+
+  input {
+    @apply border-[1px] rounded border-gray-600;
+  }
+
+  textarea {
+    @apply border-[1px] rounded border-gray-600;
+  }
+}
+
+@layer {
+  .form {
+    /* @apply text-lg !important; */
+  }
+
+  .active {
+    @apply underline !important;
+  }
+}
